@@ -8,8 +8,8 @@ export function fetchMovies(){
 }
 
 let moviePromise = fetchMovies()
-moviePromise.then()
-
-function resolveCallback(results){
-    console.log(results)
-}
+moviePromise.then(
+    function resolveCallback(results){
+        console.log(results)
+    }
+)
