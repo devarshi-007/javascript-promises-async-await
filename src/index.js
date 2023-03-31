@@ -1,4 +1,4 @@
-import { fetchWithTimeout } from "./services.js";
+import { fetchWithTimeout } from "./services";
 
 let movies = require ("./data/movies.json")
 
@@ -8,4 +8,4 @@ export function fetchMovies(){
 }
 
 let moviePromise = fetchMovies()
-moviePromise.then(movies => console.log(movies))
+moviePromise.then(result => console.log(result))
