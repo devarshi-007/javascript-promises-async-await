@@ -1,5 +1,7 @@
-import { fetchWithTimeout } from "./services";
+import { fetchWithTimeout } from "./services.js";
+import { createRequire } from "module";
 
+const require = createRequire(import.meta.url);
 let movies = require ("./data/movies.json")
 
 export function fetchMovies(){
