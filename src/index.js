@@ -1,5 +1,5 @@
 import { fetchWithTimeout } from "./services";
-import { fetchMovies, fetchBooks } from "./services";
+import {fetchMovies, fetchBooks } from "./services";
 
 //let movies = require ("./data/movies.json")
 
